@@ -6,8 +6,8 @@
     <style>
         #playground {
             background: #e0ffe0 url('images/pixel_grid.jpg');
-            width: 800px;
-            height: 800px;
+            width: 400px;
+            height: 200px;
             position: relative;
             overflow: hidden;
         }
@@ -15,8 +15,8 @@
         {
             background: #fbb;
             position: absolute;
-            width: 40px;
-            height: 40px;
+            width: 20px;
+            height: 20px;
             left: 150px;
             top: 100px;
             border-radius: 10px;
@@ -27,12 +27,12 @@
             left: 50px;
             top: 70px;
             position: absolute;
-            width: 50px;
-            height: 100px;
+            width: 30px;
+            height: 70px;
         }
         #paddleB
         {
-            left: 650px;
+            left: 320px;
         }
     </style>
 
@@ -41,6 +41,10 @@
     <header>
         <h1>Ping? Pong!</h1>
     </header>
+    <div id="scoreboard">
+        <div class="score">Player A: <span id="scoreA">0</span></div>
+        <div class="score">Player B: <span id="scoreB">0</span></div>
+    </div>
     <div id="game">
         <div id="playground">
             <div id="paddleA" class="paddle"></div>
